@@ -25,6 +25,7 @@ export default {
       this.$http
         .get(`${VITE_API_URL}/api/${VITE_API_PATH}/admin/orders?page=${page}`)
         .then((res) => {
+          console.log(res.data)
           this.orderList = res.data.orders
           this.pagination = res.data.pagination
           this.orderLoading = false
