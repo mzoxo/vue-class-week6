@@ -230,7 +230,7 @@ export default {
           this.isLoading = false
         })
         .catch((err) => {
-          console.log(err.data.message)
+          console.log(err.response.data.message)
         })
     },
     updateCartItem(cart) {
@@ -246,7 +246,7 @@ export default {
           this.loadingItem = ''
         })
         .catch((err) => {
-          console.log(err.data.message)
+          console.log(err.response.data.message)
         })
     },
     deleteCartItem(id) {
@@ -258,7 +258,7 @@ export default {
           this.loadingItem = ''
         })
         .catch((err) => {
-          console.log(err.data.message)
+          console.log(err.response.data.message)
         })
     },
     deleteAllCartItem() {
@@ -270,7 +270,7 @@ export default {
           this.isLoading = false
         })
         .catch((err) => {
-          console.log(err.data.message)
+          console.log(err.response.data.message)
         })
     },
     createOrder() {
@@ -291,7 +291,7 @@ export default {
           this.getCartList()
         })
         .catch((err) => {
-          console.log(err.data.message)
+          console.log(err.response.data.message)
         })
     }
   }

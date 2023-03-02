@@ -29,7 +29,7 @@ export default {
           this.$emit('cartLoading', this.isLoading)
         })
         .catch((err) => {
-          console.log(err.data.message)
+          console.log(err.response.data.message)
         })
     }
   }
