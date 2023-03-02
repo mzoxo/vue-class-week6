@@ -25,7 +25,7 @@
 const { VITE_API_URL } = import.meta.env
 
 export default {
-  mounted() {
+  created() {
     this.checkAdmin()
   },
   methods: {
